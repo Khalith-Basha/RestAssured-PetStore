@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">user set param &#x2F;pet&#x2F;121212121345534 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user make GET call (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate the status code as 404 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate error response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="PET test siote" duration-ms="11379" started-at="2018-12-28T10:10:44Z" finished-at="2018-12-28T10:10:55Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.RunScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@2fd953a6]" name="RunScenario" class="MyRunner.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Sanity" duration-ms="11379" started-at="2018-12-28T10:10:44Z" finished-at="2018-12-28T10:10:55Z">
+      <class name="MyRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass(java.lang.String)[pri:0, instance:MyRunner.TestRunner@2fd953a6]" name="setUpClass" is-config="true" duration-ms="8445" started-at="2018-12-28T10:10:44Z" finished-at="2018-12-28T10:10:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://petstore.swagger.io/v2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="RunScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@2fd953a6]" name="RunScenario" duration-ms="2762" started-at="2018-12-28T10:10:53Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-28T10:10:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["PET CRUD"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">user set param &#x2F;pet&#x2F;121212121345534 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user make GET call (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate the status code as 404 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate error response (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RunScenario -->
+      </class> <!-- MyRunner.TestRunner -->
+    </test> <!-- Sanity -->
+  </suite> <!-- PET test siote -->
+</testng-results>

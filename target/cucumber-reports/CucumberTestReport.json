@@ -1,0 +1,982 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "\tGet the pet details",
+        "id": "pet-crud;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 60900257,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user set param /pet/3310",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/3310",
+                  "offset": 15
+                }
+              ],
+              "location": "PetStepDef.userSetContentJson(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1692887311,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user make GET call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 10
+                }
+              ],
+              "location": "PetStepDef.whenuserMakehttpMethod(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2292692,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate the status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDef.validate_the_status_code(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 568394684,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate json schema",
+            "match": {
+              "location": "PetStepDef.validate_json_schema(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "jsonSchemaValue"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/schemas/pet"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16459571,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "validate expected response",
+            "match": {
+              "location": "PetStepDef.validate_expected_response(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "expectedResponse"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/getPetExpected"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PETGet"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "",
+        "description": "\tCreate new pet",
+        "id": "pet-crud;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 936610,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user set param /pet",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 15
+                }
+              ],
+              "location": "PetStepDef.userSetContentJson(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23936006,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user set the request body with Dyanmic values in resquest body and expected response",
+            "match": {
+              "location": "PetStepDef.user_set_the_request_body(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "RequestBody",
+                  "id",
+                  "status",
+                  "expectedResponse"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/petDetail",
+                  "random",
+                  "randomStatus",
+                  "Pet/createPetExpected"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 550871017,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user make POST call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 10
+                }
+              ],
+              "location": "PetStepDef.whenuserMakehttpMethod(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1565816,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "validate the status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDef.validate_the_status_code(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26548441,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "validate json schema",
+            "match": {
+              "location": "PetStepDef.validate_json_schema(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "jsonSchemaValue"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/schemas/pet"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56157058,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "validate response",
+            "match": {
+              "location": "PetStepDef.validate_response(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "status",
+                  "Category,name"
+                ]
+              },
+              {
+                "cells": [
+                  "Existing",
+                  "Existing",
+                  "automation"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3001575,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "validate expected response",
+            "match": {
+              "location": "PetStepDef.validate_expected_response(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "expectedResponse"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/createPetExpected"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PETCreate"
+          },
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "",
+        "description": "\tUpdate and Get the pet details",
+        "id": "pet-crud;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 610185,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user set param /pet",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 15
+                }
+              ],
+              "location": "PetStepDef.userSetContentJson(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4089318,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user set the request body with Dyanmic values in resquest body and expected response",
+            "match": {
+              "location": "PetStepDef.user_set_the_request_body(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "RequestBody",
+                  "id",
+                  "status",
+                  "expectedResponse"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/createPetExpected",
+                  "random",
+                  "randomStatus",
+                  "Pet/UpdatePetExpected"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 530614112,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user make PUT call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PUT",
+                  "offset": 10
+                }
+              ],
+              "location": "PetStepDef.whenuserMakehttpMethod(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 769028,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "validate the status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDef.validate_the_status_code(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14148887,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "validate json schema",
+            "match": {
+              "location": "PetStepDef.validate_json_schema(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "jsonSchemaValue"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/schemas/pet"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1688675,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "validate response",
+            "match": {
+              "location": "PetStepDef.validate_response(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "status",
+                  "Category,name"
+                ]
+              },
+              {
+                "cells": [
+                  "Existing",
+                  "Existing",
+                  "automation"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1365333,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "validate expected response",
+            "match": {
+              "location": "PetStepDef.validate_expected_response(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "expectedResponse"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/UpdatePetExpected"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 578314,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user set param /pet/ExistingID",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/ExistingID",
+                  "offset": 15
+                }
+              ],
+              "location": "PetStepDef.userSetContentJson(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 517333980,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user make GET call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 10
+                }
+              ],
+              "location": "PetStepDef.whenuserMakehttpMethod(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 396337,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "validate the status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDef.validate_the_status_code(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14349883,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "validate json schema",
+            "match": {
+              "location": "PetStepDef.validate_json_schema(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "jsonSchemaValue"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/schemas/pet"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1739053,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "validate expected response",
+            "match": {
+              "location": "PetStepDef.validate_expected_response(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "expectedResponse"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/UpdatePetExpected"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PETUpdate"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "line": 63,
+        "name": "",
+        "description": "\tCreate and Delete the pet details",
+        "id": "pet-crud;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 644113,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "user set param /pet",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet",
+                  "offset": 15
+                }
+              ],
+              "location": "PetStepDef.userSetContentJson(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3777286,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "user set the request body with Dyanmic values in resquest body and expected response",
+            "match": {
+              "location": "PetStepDef.user_set_the_request_body(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "RequestBody",
+                  "id",
+                  "status",
+                  "expectedResponse"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/petDetail",
+                  "random",
+                  "randomStatus",
+                  "Pet/createPetExpected"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 514559104,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "user make POST call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "POST",
+                  "offset": 10
+                }
+              ],
+              "location": "PetStepDef.whenuserMakehttpMethod(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 893944,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "validate the status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDef.validate_the_status_code(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 33754482,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "validate json schema",
+            "match": {
+              "location": "PetStepDef.validate_json_schema(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "jsonSchemaValue"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/schemas/pet"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2337928,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "validate response",
+            "match": {
+              "location": "PetStepDef.validate_response(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "status",
+                  "Category,name"
+                ]
+              },
+              {
+                "cells": [
+                  "Existing",
+                  "Existing",
+                  "automation"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1580209,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "validate expected response",
+            "match": {
+              "location": "PetStepDef.validate_expected_response(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "expectedResponse"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/createPetExpected"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 532563,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "user set param /pet/ExistingID",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/ExistingID",
+                  "offset": 15
+                }
+              ],
+              "location": "PetStepDef.userSetContentJson(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 515019184,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "user make DELETE call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DELETE",
+                  "offset": 10
+                }
+              ],
+              "location": "PetStepDef.whenuserMakehttpMethod(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 207678,
+              "status": "passed"
+            },
+            "line": 82,
+            "name": "validate the status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDef.validate_the_status_code(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 638458,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "validate expected response is empty",
+            "match": {
+              "location": "PetStepDef.validate_expected_response()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PETCreateDelete"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "line": 86,
+        "name": "",
+        "description": "",
+        "id": "pet-crud;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 315631,
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "user set param /pet/121212121345534",
+            "match": {
+              "arguments": [
+                {
+                  "val": "/pet/121212121345534",
+                  "offset": 15
+                }
+              ],
+              "location": "PetStepDef.userSetContentJson(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 502732723,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "user make GET call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GET",
+                  "offset": 10
+                }
+              ],
+              "location": "PetStepDef.whenuserMakehttpMethod(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 293526,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "validate the status code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 28
+                }
+              ],
+              "location": "PetStepDef.validate_the_status_code(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7778187,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "validate json schema",
+            "match": {
+              "location": "PetStepDef.validate_json_schema(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "jsonSchemaValue"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/schemas/noPetFound"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1642410,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "validate error response",
+            "match": {
+              "location": "PetStepDef.validate_error_response(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "message"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet not found"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 852820,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "validate expected response",
+            "match": {
+              "location": "PetStepDef.validate_expected_response(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "expectedResponse"
+                ]
+              },
+              {
+                "cells": [
+                  "Pet/notPetFound"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PETNotPetFound"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      }
+    ],
+    "name": "PET CRUD",
+    "description": "",
+    "id": "pet-crud",
+    "keyword": "Feature",
+    "uri": "src/test/java/Features/petCRUD.feature",
+    "tags": []
+  }
+]

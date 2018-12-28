@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "result">user set param &#x2F;pet&#x2F;3310 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user make GET call (PASSED : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user set param &#x2F;pet (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user set the request body with Dyanmic values in resquest body and expected response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user make POST call (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user set param &#x2F;pet (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user set the request body with Dyanmic values in resquest body and expected response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user make PUT call (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user set param &#x2F;pet&#x2F;ExistingID (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user make GET call (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user set param &#x2F;pet (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user set the request body with Dyanmic values in resquest body and expected response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user make POST call (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user set param &#x2F;pet&#x2F;ExistingID (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user make DELETE call (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate expected response is empty (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user set param &#x2F;pet&#x2F;121212121345534 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">user make GET call (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate the status code as 404 (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate error response (PASSED : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="PET test siote" duration-ms="6073" started-at="2018-12-28T10:58:14Z" finished-at="2018-12-28T10:58:20Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.RunScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@402bba4f]" name="RunScenario" class="MyRunner.TestRunner"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Sanity" duration-ms="6073" started-at="2018-12-28T10:58:14Z" finished-at="2018-12-28T10:58:20Z">
+      <class name="MyRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass(java.lang.String)[pri:0, instance:MyRunner.TestRunner@402bba4f]" name="setUpClass" is-config="true" duration-ms="135" started-at="2018-12-28T10:58:14Z" finished-at="2018-12-28T10:58:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://petstore.swagger.io/v2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="RunScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@402bba4f]" name="RunScenario" duration-ms="2408" started-at="2018-12-28T10:58:14Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-28T10:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["PET CRUD"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">user set param &#x2F;pet&#x2F;3310 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user make GET call (PASSED : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RunScenario -->
+        <test-method status="PASS" signature="RunScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@402bba4f]" name="RunScenario" duration-ms="677" started-at="2018-12-28T10:58:17Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-28T10:58:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["PET CRUD"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">user set param &#x2F;pet (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user set the request body with Dyanmic values in resquest body and expected response (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user make POST call (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate response (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RunScenario -->
+        <test-method status="PASS" signature="RunScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@402bba4f]" name="RunScenario" duration-ms="1105" started-at="2018-12-28T10:58:17Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-28T10:58:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["PET CRUD"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">user set param &#x2F;pet (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user set the request body with Dyanmic values in resquest body and expected response (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user make PUT call (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate response (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user set param &#x2F;pet&#x2F;ExistingID (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user make GET call (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RunScenario -->
+        <test-method status="PASS" signature="RunScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@402bba4f]" name="RunScenario" duration-ms="1084" started-at="2018-12-28T10:58:18Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-28T10:58:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["PET CRUD"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">user set param &#x2F;pet (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user set the request body with Dyanmic values in resquest body and expected response (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user make POST call (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate response (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user set param &#x2F;pet&#x2F;ExistingID (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user make DELETE call (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate the status code as 200 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate expected response is empty (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RunScenario -->
+        <test-method status="PASS" signature="RunScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@402bba4f]" name="RunScenario" duration-ms="518" started-at="2018-12-28T10:58:19Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2018-12-28T10:58:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[""]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["PET CRUD"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div "result">user set param &#x2F;pet&#x2F;121212121345534 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">user make GET call (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate the status code as 404 (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate json schema (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate error response (PASSED : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">validate expected response (PASSED : 0s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RunScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunner@402bba4f]" name="tearDownClass" is-config="true" duration-ms="10" started-at="2018-12-28T10:58:20Z" finished-at="2018-12-28T10:58:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- MyRunner.TestRunner -->
+    </test> <!-- Sanity -->
+  </suite> <!-- PET test siote -->
+</testng-results>
